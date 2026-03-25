@@ -9,28 +9,28 @@ Unlike traditional "black-box" systems, Sentinel-AI uses a Distributed Microserv
 ## 🏗️ The 4-Module Architecture
 The system is divided into four specialized modules, each developed by a core team member:
 
-### 1. Endpoint Telemetry Module (Member 1)
+### 1. Endpoint Telemetry Module (Josphat)
 Role: Early warning system.
 
 Function: Extracts hardware signatures and monitors IMSI/SIM lifecycle anomalies.
 
 Impact: Identifies SIM Swap precursors at the device level before a transaction is even initiated.
 
-### 2. Distributed Infrastructure & Rate-Limiting (Member 3)
+### 2. Distributed Infrastructure & Rate-Limiting (Bramwel)
 Role: Volumetric protection.
 
 Function: Implements a Token-Bucket algorithm via Redis to mitigate high-velocity BIN enumeration attacks.
 
 Impact: Prevents API collapse during botnet-driven "brute force" card testing.
 
-### 3. Cryptographic Gateway Service (Member 2)
+### 3. Cryptographic Gateway Service (Sharon)
 Role: Privacy & Compliance.
 
 Function: Utilizes Format-Preserving Encryption (FPE) to mask PII (Personally Identifiable Information).
 
 Impact: Ensures the AI processes data without seeing raw phone numbers or bank accounts, satisfying PCI-DSS and local data laws.
 
-### 4. Transformer-Based XAI Engine (Yvonne Kwaya)
+### 4. Transformer-Based XAI Engine (Yvonne)
 Role: The Intelligence Core.
 
 Function: Uses Sequence-based Transformers to analyze transaction patterns and SHAP (Explainable AI) for justifications.
@@ -54,6 +54,7 @@ Dataset: PaySim (Synthetic Mobile Money Simulator)
 All modules communicate via a unified JSON packet. This ensures seamless data flow from the hardware sensor to the AI engine.
 
 JSON
+
 {
   "transaction_id": "JKUAT-2026-X",
   "telemetry": { "imsi_status": "CHANGED", "hardware_risk": 0.88 },
@@ -65,6 +66,7 @@ JSON
 ## 🛠️ Installation & Setup
 Clone the repository:
 git clone https://github.com/Mogshany/fraud-detection-project.git
+
 cd fraud-detection-project
 
 Install Dependencies:
