@@ -1,0 +1,32 @@
+# --- Python Environment ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+build/
+dist/
+
+# --- Data & Large Files (CRITICAL) ---
+# We don't want to push 100MB+ CSV files to GitHub
+data/
+*.csv
+*.zip
+*.parquet
+*.h5
+*.pt
+*.pth
+
+# --- Security & Credentials ---
+# Never push your API keys or Redis passwords!
+.env
+auth_tokens.json
+*.pem
+*.key
+
+# --- IDE & System Files ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
