@@ -1,0 +1,355 @@
+.credits-section {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.credits-section h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+  border-bottom: 3px solid #667eea;
+  padding-bottom: 15px;
+}
+
+/* Team Grid */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.team-member {
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-top: 5px solid #667eea;
+}
+
+.team-member:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Member Type Colors */
+.team-member.edge-computing {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-top-color: #667eea;
+}
+
+.team-member.cryptography {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  border-top-color: #f093fb;
+}
+
+.team-member.distributed-systems {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  border-top-color: #4facfe;
+}
+
+.team-member.nlp {
+  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+  border-top-color: #43e97b;
+}
+
+.team-member {
+  color: white;
+}
+
+.member-icon {
+  font-size: 48px;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.team-member h3 {
+  font-size: 16px;
+  margin: 15px 0 5px 0;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.member-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 0 15px 0;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.contributions {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 13px;
+  text-align: left;
+}
+
+.contributions li {
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  line-height: 1.4;
+}
+
+.contributions li:last-child {
+  border-bottom: none;
+}
+
+/* Architecture Section */
+.architecture-section {
+  background: #f8f9fa;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  border-left: 5px solid #667eea;
+}
+
+.architecture-section h3 {
+  color: #333;
+  margin-top: 0;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.architecture-flow {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+  overflow-x: auto;
+  padding: 20px 0;
+  align-items: stretch;
+}
+
+.architecture-stage {
+  flex: 1;
+  min-width: 200px;
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  background: white;
+}
+
+.architecture-stage.edge {
+  border-color: #667eea;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+}
+
+.architecture-stage.crypto {
+  border-color: #f093fb;
+  background: linear-gradient(135deg, rgba(240, 147, 251, 0.1) 0%, rgba(245, 87, 108, 0.1) 100%);
+}
+
+.architecture-stage.ml {
+  border-color: #4facfe;
+  background: linear-gradient(135deg, rgba(79, 172, 254, 0.1) 0%, rgba(0, 242, 254, 0.1) 100%);
+}
+
+.architecture-stage.output {
+  border-color: #43e97b;
+  background: linear-gradient(135deg, rgba(67, 233, 123, 0.1) 0%, rgba(56, 249, 215, 0.1) 100%);
+}
+
+.stage-header {
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.stage-header h4 {
+  margin: 0 0 5px 0;
+  color: #333;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.member-tag {
+  font-size: 12px;
+  color: #666;
+  margin: 0;
+  font-style: italic;
+}
+
+.stage-content {
+  font-size: 12px;
+  color: #666;
+  line-height: 1.8;
+}
+
+.stage-content p {
+  margin: 5px 0;
+}
+
+.data-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.data-item {
+  display: inline-block;
+  background: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  border: 1px solid #ddd;
+  color: #555;
+}
+
+.architecture-arrow {
+  font-size: 24px;
+  color: #667eea;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  flex-shrink: 0;
+}
+
+/* Interactions Grid */
+.interactions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.interaction-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.interaction-card h4 {
+  margin: 0 0 10px 0;
+  color: #333;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.interaction-card p {
+  margin: 0;
+  color: #666;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* Tech Stack */
+.tech-stack {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+}
+
+.tech-stack h3 {
+  color: #333;
+  margin-top: 0;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.tech-layers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.tech-layer {
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 5px solid #667eea;
+}
+
+.tech-layer.edge-tech {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+  border-left-color: #667eea;
+}
+
+.tech-layer.crypto-tech {
+  background: linear-gradient(135deg, rgba(240, 147, 251, 0.05) 0%, rgba(245, 87, 108, 0.05) 100%);
+  border-left-color: #f093fb;
+}
+
+.tech-layer.ml-tech {
+  background: linear-gradient(135deg, rgba(79, 172, 254, 0.05) 0%, rgba(0, 242, 254, 0.05) 100%);
+  border-left-color: #4facfe;
+}
+
+.tech-layer.nlp-tech {
+  background: linear-gradient(135deg, rgba(67, 233, 123, 0.05) 0%, rgba(56, 249, 215, 0.05) 100%);
+  border-left-color: #43e97b;
+}
+
+.tech-layer.platform-tech {
+  background: linear-gradient(135deg, rgba(255, 195, 0, 0.05) 0%, rgba(255, 87, 34, 0.05) 100%);
+  border-left-color: #ffc300;
+}
+
+.tech-layer h4 {
+  margin: 0 0 15px 0;
+  color: #333;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.tech-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  background: white;
+  border: 1px solid #ddd;
+  color: #666;
+}
+
+.badge.crypto {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  border: none;
+}
+
+.badge.ml {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  color: white;
+  border: none;
+}
+
+.badge.nlp {
+  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+  color: white;
+  border: none;
+}
+
+.badge.platform {
+  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+  color: white;
+  border: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .architecture-flow {
+    flex-direction: column;
+  }
+
+  .architecture-arrow {
+    transform: rotate(90deg);
+    padding: 10px 0;
+  }
+}

@@ -1,0 +1,29 @@
+# FinFlag .gitignore
+
+# ── SECRET FILES — NEVER COMMIT ──────────────────────────────────────────────
+.env
+*.key
+*.pem
+
+# ── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+# ── ML Model Checkpoints (too large for Git) ──────────────────────────────────
+*.pt
+*.pth
+*.ckpt
+ml_model/checkpoints/
+
+# ── VS Code ───────────────────────────────────────────────────────────────────
+.vscode/settings.json
+
+# ── OS ────────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
