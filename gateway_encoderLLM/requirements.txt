@@ -1,27 +1,12 @@
 # FinFlag Requirements
-# Install with: pip install -r requirements.txt
-
-# ── Cryptography (Sharon's Gateway layer) ────────────────────────────────────
-cryptography>=42.0.0          # AES-ECB for FF1 FPE implementation
-
-# ── API Gateway ──────────────────────────────────────────────────────────────
-fastapi>=0.110.0              # The Shield — REST API
-uvicorn[standard]>=0.29.0     # ASGI server to run FastAPI
-pydantic>=2.0.0               # Data validation / Data Dictionary enforcement
-
-# ── Message Queue (Member 3's layer) ─────────────────────────────────────────
-redis>=5.0.0                  # Redis client for transaction queue
-
-# ── Encoder LLM (Sharon's ML layer) ──────────────────────────────────────────
-# NOTE: torch can be large (~2GB). Install separately if needed.
-# torch>=2.2.0                # Uncomment when ready to train
-# transformers>=4.40.0        # DistilBERT tokenizer + model
-
-# ── Structured ML (Yvonne's layer — installed now so pipeline works) ──────────
-scikit-learn>=1.4.0           # Logistic regression meta-classifier
-xgboost>=2.0.0                # Gradient boosting fraud classifier
-numpy>=1.26.0                 # Numeric arrays
-pandas>=2.2.0                 # DataFrame handling for PaySim data
-
-# ── Testing ───────────────────────────────────────────────────────────────────
-pytest>=8.0.0                 # Run: pytest tests/ -v
+cryptography>=42.0.0
+fastapi>=0.110.0
+uvicorn[standard]>=0.29.0
+pydantic>=2.0.0
+redis>=5.0.0
+transformers>=4.40.0
+scikit-learn>=1.4.0
+xgboost>=2.0.0
+numpy>=1.26.0
+pandas>=2.2.0
+pytest>=8.0.0
