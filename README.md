@@ -53,8 +53,8 @@ The system operates across four computing domains in sequence:
 | Member | Role | Computing Area | Key Deliverable |
 |---|---|---|---|
 | **Sharon** | Repo Owner · Cryptographic Gateway · Encoder LLM | Applied Cryptography · NLP · Deep Learning | `gateway/fpe.py`, `gateway/hashing.py`, `gateway/main.py`, `ml_model/encoder_model.py`, `ml_model/tokenizer_service.py` |
-| **Member 1** | Sensor & Edge Engineer | Edge Computing · Signal Processing | `data_bridge.py` — streams PaySim data, injects Kenyan metadata |
-| **Member 3** | Infrastructure & DevOps | Distributed Systems · MLOps | `docker-compose.yml`, Redis Stack config, model serving |
+| **Josphat** | Sensor & Edge Engineer | Edge Computing · Signal Processing | `data_bridge.py` — streams PaySim data, injects Kenyan metadata |
+| **Bramwel** | Infrastructure & DevOps | Distributed Systems · MLOps | `docker-compose.yml`, Redis Stack config, model serving |
 | **Yvonne** | Intelligence & NLP Engineer | Machine Learning · Explainability | XGBoost classifier, `ml_model/shap_explainer.py` |
 
 ---
@@ -143,10 +143,10 @@ finflag/
 │   ├── pipeline.py                 # End-to-end integration (demo + tests)
 │   └── shap_explainer.py           # Yvonne — XGBoost + SHAP explainability
 │
-├── data_bridge/                    # Member 1 — Edge Sensor Layer
+├── data_bridge/                    # Josphat — Edge Sensor Layer
 │   └── data_bridge.py              # PaySim streamer + Kenya-nization
 │
-├── infra/                          # Member 3 — Infrastructure
+├── infra/                          # Bramwel — Infrastructure
 │   ├── docker-compose.yml          # One-command system startup
 │   └── redis.conf                  # Redis Stack configuration
 │
@@ -171,8 +171,8 @@ finflag/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/finflag.git
-cd finflag
+git clone [https://github.com/Mogshany/fraud-detection-project.git]
+cd fraud-detection-project
 ```
 
 ### 2. Run the setup script
