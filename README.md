@@ -36,14 +36,14 @@ The system operates across four computing domains in sequence:
 ```
 [Edge Sensor]  →  [The Shield]  →  [The Handshake]  →  [The Brain]
  Raw PII data      FPE + HMAC       Redis Queue         AI Verdict
- Member 1          Sharon           Member 3            Sharon + Yvonne
+ Josphat          Sharon           Bramwel            Sharon + Yvonne
 ```
 
 | Domain | Component | Owner | Technology |
 |---|---|---|---|
-| Capture | `data_bridge.py` | Member 1 | PaySim / M-Pesa sensor feed |
+| Capture | `data_bridge.py` | Josphat | PaySim / M-Pesa sensor feed |
 | Shield | `gateway/` | Sharon | FastAPI · FF1 FPE · HMAC-SHA256 |
-| Handshake | Redis Stack | Member 3 | Redis 7.2 · Docker Compose |
+| Handshake | Redis Stack | Bramwel | Redis 7.2 · Docker Compose |
 | Brain | `ml_model/` | Sharon + Yvonne | DistilBERT · XGBoost · SHAP |
 
 ---
@@ -55,7 +55,7 @@ The system operates across four computing domains in sequence:
 | **Sharon** | Repo Owner · Cryptographic Gateway · Encoder LLM | Applied Cryptography · NLP · Deep Learning | `gateway/fpe.py`, `gateway/hashing.py`, `gateway/main.py`, `ml_model/encoder_model.py`, `ml_model/tokenizer_service.py` |
 | **Josphat** | Sensor & Edge Engineer | Edge Computing · Signal Processing | `data_bridge.py` — streams PaySim data, injects Kenyan metadata |
 | **Bramwel** | Infrastructure & DevOps | Distributed Systems · MLOps | `docker-compose.yml`, Redis Stack config, model serving |
-| **Yvonne** | Intelligence & NLP Engineer | Machine Learning · Explainability | XGBoost classifier, `ml_model/shap_explainer.py` |
+| **Yvonne** | Intelligence & ML Engineer | Machine Learning · Explainability | XGBoost classifier, `ml_model/shap_explainer.py` |
 
 ---
 
@@ -291,7 +291,7 @@ The `.env` file is generated automatically by the setup script. **Never commit i
 
 ---
 
-## Running with Docker Compose (Member 3)
+## Running with Docker Compose (Bramwel)
 
 ```bash
 docker compose up
