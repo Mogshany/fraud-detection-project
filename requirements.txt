@@ -1,3 +1,15 @@
-redis
-faker
-matplotlib
+#redis
+#faker
+# matplotlib
+# FraudShield — SCT212-0906/2018
+# Install with: pip install -r requirements.txt
+
+# Core
+redis>=4.6.0           # Redis client (optional — falls back to in-memory)
+
+# Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0      # coverage reporting
+
+# Monitoring (optional)
+prometheus-client>=0.18.0
