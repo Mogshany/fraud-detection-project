@@ -1,0 +1,12 @@
+# Role 1 – Smart Edge Telemetry & Anomaly Detection
+# Python Standard Library only – no external dependencies required.
+# All algorithms are implemented from scratch using built-in modules:
+#   hashlib, json, math, time, statistics, datetime, collections
+
+# ── Optional: for running tests ──
+pytest>=7.0.0
+
+# ── Optional: for ML extension (logistic regression) ──
+# Uncomment if you want to add the lightweight ML model:
+# scikit-learn>=1.0.0
+# numpy>=1.21.0
